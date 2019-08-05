@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Title from './components/Title'
 import Explanation from './components/Explanation'
 import APOD from './components/APOD'
@@ -17,8 +17,12 @@ function App() {
   
   return (
     <div className="App">
-      <Title text="Astronomical Photo of the Day 🚀" />
+      <Title 
+        text="Astronomical Photo of the Day 🚀" 
+        size="h1"
+      />
       {/* APOD = "Astronomical Photo of the Day" */}
+      
       <APOD 
         url={photoOfTheDay.url}
         hdurl={photoOfTheDay.hdurl}
