@@ -15,7 +15,7 @@ function App() {
     hdurl: '',
     date: ''
   })
-  
+
   return (
     <div className="App">
       <Title 
@@ -27,6 +27,7 @@ function App() {
       <APOD 
         url={photoOfTheDay.url}
         hdurl={photoOfTheDay.hdurl}
+        caption={photoOfTheDay.title}
       /> 
       <Explanation text={photoOfTheDay.explanation}/>
     </div>
