@@ -9,6 +9,7 @@ const API_KEY = "DIYt1V1KVtpEOn5xlJmh8rljEJNPDIU0rOT25xBF"
 
 function App() {
   const [ photoOfTheDay, setPhotoOfTheDay ] = useState({
+    title: '',
     url: '',
     explanation: '',
     hdurl: '',
