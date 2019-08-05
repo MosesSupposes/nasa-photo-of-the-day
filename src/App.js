@@ -17,7 +17,7 @@ function App() {
   })
 
   useEffect(function fetchAPOD() {
-    fetch("https://api.nasa.gov/planetary/apod?api_key=DIYt1V1KVtpEOn5xlJmh8rljEJNPDIU0rOT25xBF")
+    fetch(`https://api.nasa.gov/planetary/apod?hd=True&api_key=${API_KEY}`)
       .then(function parseToJson(res) {
         return res.json()
       })
