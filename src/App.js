@@ -16,6 +16,22 @@ function App() {
     date: ''
   })
 
+  useEffect(function fetchAPOD() {
+    fetch("https://api.nasa.gov/planetary/apod?api_key=DIYt1V1KVtpEOn5xlJmh8rljEJNPDIU0rOT25xBF")
+      .then(function parseToJson(res) {
+        return res.json()
+      })
+      .then(function updateState(parsedRes) {
+        setPhotoOfTheDay({
+          title: parsedRes.title,
+          date: parsedRes.date,
+          url: parsedRes.url,
+          hdurl: parsedRes.hdurl,
+          explanation: parsedRes.explanation
+        })
+      })
+  })
+
   return (
     <div className="App">
       <Title 
