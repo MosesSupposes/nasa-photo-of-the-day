@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Title from './components/Title'
-import Explanation from './components/Explanation'
-import APOD from './components/APOD'
+import Title from './components/Title/Title'
+import Explanation from './components/Explanation/Explanation'
+import APOD from './components/APOD/APOD'
 
 import "./App.css";
 
