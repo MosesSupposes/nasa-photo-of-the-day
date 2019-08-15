@@ -1,14 +1,16 @@
 import React from 'react'
+import styles from './APOD.module.css'
 
 
 export default function APOD(props) {
     return (
         <figure>
-            <img         
+            <img
+                className={styles.APODImg}        
                 src={props.hdurl || props.url} 
                 alt="The astronmical photo of the day" 
             />
-            <figcaption>{props.caption}</figcaption>
+            <figcaption className={styles.caption}>{props.caption}</figcaption>
         </figure>
 
     )
