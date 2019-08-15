@@ -30,7 +30,7 @@ function App() {
           explanation: parsedRes.explanation
         })
       })
-  })
+  }, [])
 
   return (
     <div className="App">
